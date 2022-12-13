@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Login Page</title>
+    <title>Login Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+    <meta name="description" content="Yu2Me Login Page">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'login.css' %}">
+</head>
+<body>
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> 
+            browser. Please <a href="#">upgrade your browser</a> to improve your experience.
+        </p>
+    <![endif]-->
+    <!-- partial:index.partial.html -->
+    <div class="box-form">
+        <div class="left">
+            <div class="overlay">
+                <h1>Hello World.</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et est sed felis 
+                    aliquet sollicitudin
+                </p>
+                <span>
+                    <p>login with social media</p>
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Login with Twitter</a>
+                </span>
+            </div>
+        </div>
+        <div class="right">
+            <h5>Login</h5>
+            <p>Don't have an account? <a href="#">Creat Your Account</a> it takes less than a minute</p>
+            <div class="inputs">
+                <input type="text" placeholder="user name"><br>
+                <input type="password" placeholder="password">
+            </div><br><br>
+            <div class="remember-me--forget-password">
+			<!-- Angular -->
+            <label>
+                <input type="checkbox" name="item" checked/>
+                <span class="text-checkbox">Remember me</span>
+            </label>
+            <p>forget password?</p>
+        </div><br>
+		<button>Login</button>
+    </div>
+    <!-- partial -->
+</body>
+</html>
